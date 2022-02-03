@@ -4,7 +4,11 @@ import Modal from "./Modal";
 import Todo from "./TodoList/Todo";
 
 
+import { I18nProvider, LOCALES } from "./i18n"
+import translate from './i18n/translate';
+
 function App() {
+	const [languages, setlanguages] = useState(LOCALES.ENGLISH);
 	const [showModal, setshowModal] = useState(false);
 	const [dlIndex, setdlIndex] = useState(null);
 	const [list, setlist] = useState(['html', 'css', 'Java Script', 'React.js', 'Node.js', 'Python' ]);
@@ -17,15 +21,26 @@ function App() {
 		newTodo.splice(dlIndex,1)
 		setlist(newTodo)
 	}
+	const handlerChange = (e) => { 
+		const { value } = e.target;
+		setlanguages(LOCALES[value])
+	 }
 	return (
-
+		<I18nProvider locale={languages}>
 		<div className="container">
-				<h2>My Todos</h2>
+				<h2>{translate("hello")}</h2>
+				<h2>{translate("withpath", {path: "A"})}</h2>
+				<select name="lng" id="lng" onChange={handlerChange}>
+					<option value="ENGLISH">eng</option>
+					<option value="GERMAN">ge</option>
+					<option value="ARM">հայ</option>
+				</select>
 				<div className="flex">
 				<Todo data={list} openModal={togglemodal}/>
 				</div>
 			{showModal && <Modal showModal={showModal} setshowModal={togglemodal} deleter={handleDeleter}/>}
 		</div>
+		</I18nProvider>
 	);
 }
 
