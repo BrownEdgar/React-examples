@@ -1,0 +1,82 @@
+{
+  "customSyntax": "postcss-scss",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "ignoreAtRules": [
+          "import",
+          "else"
+        ],
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "block-opening-brace-space-before": "always",
+    "color-hex-case": "upper",
+    "declaration-colon-space-after": "always-single-line",
+    "indentation": 2,
+    "length-zero-no-unit": true,
+    "max-empty-lines": 1,
+    "max-nesting-depth": [
+      4,
+      {
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes"
+        ]
+      }
+    ],
+    "number-leading-zero": "always",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "selector-combinator-space-after": "always",
+    "selector-combinator-space-before": "always",
+    "selector-list-comma-newline-after": "always",
+    "string-quotes": "single",
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      {
+        "type": "at-rule",
+        "name": "mixin"
+      },
+      {
+        "type": "at-rule",
+        "name": "extend"
+      },
+      "declarations",
+      {
+        "type": "at-rule"
+      },
+      {
+        "type": "rule",
+        "selector": "/^&:[\\w-]+$/"
+      },
+      {
+        "type": "rule",
+        "selector": "/^&::[\\w-]+$/"
+      },
+      {
+        "type": "rule"
+      }
+    ]
+  }
+}
