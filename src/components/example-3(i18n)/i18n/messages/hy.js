@@ -3,7 +3,11 @@ import { LOCALES } from '../locales'
 const hy = {
 	[LOCALES.ARM]: {
 		"hello": "Barev",
-		"withpath": "this language path is: {path}"
+		"abcd": "հայերեն ABCD",
+		"btn-delete": "Ջնջել",
+		"withpath": "this language path is: {path}",
+		description: "«Նորություններ» նախագծի նպատակն է Գլխավոր էջում ամեն շաբաթ ներկայացնել աշխարհում տեղի ունեցող վերջին կարևոր իրադարձությունները։"
 	}
 }
 export default hy
+
