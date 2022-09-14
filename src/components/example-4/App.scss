@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	background-color: #f3f3f3;
+	padding: 3rem 1rem;
+	text-align: center;
+	margin: 120px auto;
+	max-width: 60em !important;
+	h2 {
+		margin-bottom: 25px;
+	}
+}
+.input-container {
+  display: flex;
+  width: 60%;
+	margin: 10px auto;
+  margin-bottom: 15px;
+
+
+
+	form {
+		width: 100%;
+		margin: 60px auto;
+	}
+}
+
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+
+.reg {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+	width: 60%;
+  border: none;
+  cursor: pointer;
+
+  opacity: 0.9;
+}
+
+.reg:hover {
+  opacity: 1;
+}
+svg{
+width: 50px;
+height: 50px;
+
+}
