@@ -39,7 +39,7 @@ function App() {
     <I18nProvider locale={languages}>
       <div className="container">
         <h2>{translate("hello")}</h2>
-        <h2>{translate("withpath", { path: value })}</h2>
+        <h2>{translate("withpath", { path: value, path2: "Hayeren"})}</h2>
         <h1>{translate("abcd")}</h1>
         <select name="lng" id="lng" onChange={handlerChange}>
           <option value="ENGLISH">eng</option>

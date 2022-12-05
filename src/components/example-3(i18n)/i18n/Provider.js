@@ -6,7 +6,7 @@ import messages from './messages';
 export default function Provider({ children, locale = LOCALES.ENGLISH}) {
 	return <IntlProvider
 			locale={locale}
-			textContent={Fragment}
+			textComponent={Fragment}
 			messages={messages[locale]}
 	>
 		{children}

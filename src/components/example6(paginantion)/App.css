@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
-ul {
+ul.list {
   list-style-type: none;
+	padding-left: 0;
+}
+.list-item_md{
+	padding: 0.5rem;
+	border: 1px solid grey;
+	border-radius: 8px;
+	font-size: 18px;
+	margin-bottom: 8px;
 }
