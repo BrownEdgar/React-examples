@@ -1,0 +1,33 @@
+@mixin menuFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin main-grid-rools() {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+}
+
+@mixin block-grid-rools() {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  grid-gap: 40px 20px;
+  padding: 40px;
+}
+
+@mixin podcastsListFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+@mixin podcast-image-rools() {
+}

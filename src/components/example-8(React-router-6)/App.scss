@@ -1,0 +1,57 @@
+@import "./sass/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  border-top: 5px solid yellow;
+  background-color: #111 !important;
+}
+
+html {
+  font-size: 10px;
+}
+
+.Container {
+  max-width: 1200px;
+  margin: 50px auto !important;
+
+  min-height: 80vh;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  @include main-grid-rools();
+
+  .MainMenu {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #333;
+    &-Title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    &-List {
+      @include menuFlex();
+      list-style: none;
+      color: #f1c40f;
+      padding-left: 0;
+      li {
+        line-height: 1.6;
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
