@@ -7,7 +7,7 @@ export default function Posts({ posts, loading }) {
   return (
     <ul className='list'>
       {posts.map(post => {
-        return <li key={post.id} className='list-item'>
+				return <li key={post.id} className='list-item list-item_md'>
           {post.title}
         </li>
       })}

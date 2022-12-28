@@ -19,14 +19,14 @@ export default function App() {
       setPosts(response.data)
       setLoading(false)
     }
-
     fetchPost()
-
   }, [])
 
-  const lastPostIndex = currentPage * postPerPage;
-  const firstPostIndex = lastPostIndex - postPerPage;
-  const currentPosts = posts.slice(firstPostIndex, lastPostIndex)
+// currentPage = 3
+// postPerPage = 10
+  const lastPostIndex = currentPage * postPerPage; // 3x10=30
+  const firstPostIndex = lastPostIndex - postPerPage; // 30-10=20 
+  const currentPosts = posts.slice(firstPostIndex, lastPostIndex) // slice(20,30)
 
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
