@@ -9,7 +9,7 @@ export default function useWindowScrollPosition() {
       const { clientHeight } = document.body;
       const showtime = scrollY + innerHeight + 400 > clientHeight
       const positions = {
-        scrollY,
+				scrollY: scrollY.toFixed(1) ,
         innerHeight,
         body: clientHeight,
         showtime
