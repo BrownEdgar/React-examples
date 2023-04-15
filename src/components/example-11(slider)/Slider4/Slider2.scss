@@ -1,0 +1,16 @@
+.Slider2 {
+  height: 450px;
+  .slick {
+    &-center {
+      width: 350px;
+      .card {
+        color: orange;
+        background-color: #444;
+      }
+    }
+  }
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
