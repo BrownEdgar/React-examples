@@ -11,7 +11,7 @@ export default function FullSlider() {
     autoplay: true,
     autoplaySpeed: 5000,
     fade: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 4, // նախնական 'slide' index-ը
 

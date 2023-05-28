@@ -12,35 +12,35 @@ export default function App() {
   const [page, setPage] = useState(1)
   const [start, setStart] = useState(0)
   const positions = useWindowScrollPosition()
-  // useEffect(() => {
-  //   const fetchData = () => {
-  //     // պոստերը 100-ից հետո ստանալն անիմաստ է
-  //     axios.all([
-  //       instance({ url: '/photos', params: { page, _limit: 20, _start: start } }),
-  //       instance({ url: '/posts', params: { page, _limit: 20, _start: start } })
-  //     ])
-  //       .then(([albums, posts]) => {
-  //         const mergeData = albums.data.map((album, index) => {
-  //           album.body = posts?.data[index]?.body || "Lorem ipsum dolor sit amet.";
-  //           return album
-  //         })
-  //         console.log('mergeData', mergeData)
-  //         setData([...data, ...mergeData])
-  //         setPage(page + 1)
-  //         setStart(start + 20)
-  //       })
-  //       .catch(error => {
-  //         console.log(error);
-  //       })
-  //       .finally(() => {
-  //         console.log("fetch data is here!");
-  //       })
-  //   }
-  //   if (positions.showtime) {
-  //     fetchData()
-  //   }
+  useEffect(() => {
+    const fetchData = () => {
+      // պոստերը 100-ից հետո ստանալն անիմաստ է
+      axios.all([
+        instance({ url: '/photos', params: { page, _limit: 20, _start: start } }),
+        instance({ url: '/posts', params: { page, _limit: 20, _start: start } })
+      ])
+        .then(([albums, posts]) => {
+          const mergeData = albums.data.map((album, index) => {
+            album.body = posts?.data[index]?.body || "Lorem ipsum dolor sit amet.";
+            return album
+          })
+          console.log('mergeData', mergeData)
+          setData([...data, ...mergeData])
+          setPage(page + 1)
+          setStart(start + 20)
+        })
+        .catch(error => {
+          console.log(error);
+        })
+        .finally(() => {
+          console.log("fetch data is here!");
+        })
+    }
+    if (positions.showtime) {
+      fetchData()
+    }
 
-  // }, [positions.showtime])
+  }, [positions.showtime])
 
 
   return (

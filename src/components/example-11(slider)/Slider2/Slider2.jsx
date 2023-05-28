@@ -6,13 +6,13 @@ import "./Slider2.scss"
 
 export default function Slider2() {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     className: "center",
     centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     focusOnSelect: true, // scroll 'click'-ից հետո
   };
   return (

@@ -13,9 +13,7 @@ function App() {
 		setdlIndex(index)
 	}
 	const handleDeleter = () => {  
-		let newTodo = list;
-		newTodo.splice(dlIndex,1)
-		setlist(newTodo)
+		setlist(list.toSpliced(dlIndex, 1))
 	}
 	return (
 
