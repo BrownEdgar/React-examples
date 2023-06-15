@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+
+}
+
+ul.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 50px auto;
+  max-width: 700px;
+}
+
+.list-item_md {
+  padding: 0.5rem 1em;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  gap: 10px;
+  list-style: none;
+  padding: 10px;
+  background-color: royalblue;
+  height: 50px;
+}
+
+.navigation li {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+
+}
+
+.navigation li a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+li.pg-item.selected {
+  background-color: #fff;
+  border-radius: 50%;
+  color: black;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.previous,
+li.next {
+  width: 20px;
+  height: 20px;
+  margin: 0 30px;
+  padding: 3px;
+  font-size: 12px;
+  box-sizing: content-box;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: #a5e1aa;
+  align-items: center;
+}
