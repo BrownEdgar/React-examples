@@ -5,4 +5,4 @@
 
 # 
 1. `Example-1`: Աղյուսակ,որում պատկերված են պատահական ֆիլմերի տվյալներ։Կա ջնջելու հնարավորություն։ 
-	թեմաներ․՝ (map, read data, conditional rendering, props)
+	թեմաներ․՝ (map, fetch data, conditional rendering, props)
