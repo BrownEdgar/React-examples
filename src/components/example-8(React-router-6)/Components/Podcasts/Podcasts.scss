@@ -1,7 +1,0 @@
-@import "../../sass/mixins";
-
-.Podcasts {
-  margin: 40px 20px;
-
-  @include podcastsListFlex();
-}

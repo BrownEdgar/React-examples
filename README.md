@@ -1,8 +1,3 @@
-### Այս Repo-ում հավաքված են  React.js աշխատանքը, syntax-ը բացատրող Օրինակներ
+# delete ._ files
 
-
-- Օրինակներում օգտագործված է `React Bootstrap`, ավելին [կարդալ այստեղ](/guides/content/editing-an-existing-page)  
-
-# 
-1. `Example-1`: Աղյուսակ,որում պատկերված են պատահական ֆիլմերի տվյալներ։Կա ջնջելու հնարավորություն։ 
-	թեմաներ․՝ (map, fetch data, conditional rendering, props)
+find . -type f -name '._*' -delete
