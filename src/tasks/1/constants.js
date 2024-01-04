@@ -1,0 +1,1 @@
+export const MENU_ITEMS_LIST = ['posts', 'todos', 'comments', 'albums']

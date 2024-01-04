@@ -1,0 +1,38 @@
+.Menu {
+  height: 80px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  &__list {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 16px;
+    height: 40px;
+    padding: 0 10px;
+    flex-basis: 40%;
+    list-style: none;
+  }
+  &__item {
+    border: 2px solid green;
+    border-radius: 27% 73% 20% 80% / 100% 0% 100% 0%;
+    border-bottom: 0;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+    color: #fff;
+    transition: 0.7s;
+
+    &-active {
+      background-color: green;
+      color: #fff;
+      transform: translateY(-6px);
+      transition:
+        transform 0.3s,
+        background-color 0.1s;
+    }
+  }
+}
