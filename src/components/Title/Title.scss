@@ -1,0 +1,27 @@
+:is(h1, h2, h3) {
+  margin-bottom: 16px;
+  opacity: 0;
+}
+
+:is(h1, h2, h3).active {
+  animation: fade-in-left 2s 0.2s ease both;
+}
+
+.letter {
+  color: orangered;
+  font-size: calc(40px + 1vw);
+  margin-right: 2px;
+  font-weight: 900;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

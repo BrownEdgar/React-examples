@@ -1,0 +1,33 @@
+@import "../../sass/mixins";
+@import "../../sass/colors";
+
+main {
+  @include darkMainRules(#100f10);
+
+  .grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    border-radius: 12px;
+    outline: 10px solid #1f1d1b;
+    padding: 3em 2em;
+    gap: 20px;
+    &__button {
+      @include yellowButton($main-yellow, #222);
+      &-active {
+        background-color: #4fce0b;
+        outline: 3px solid rgb(249, 58, 19);
+      }
+    }
+  }
+  .city {
+    width: 900px;
+    padding: 1em 0em;
+    margin: 0 auto;
+    img {
+      width: 700px;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+}

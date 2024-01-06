@@ -1,0 +1,48 @@
+@import "../../sass/mixins";
+@import "../../sass/colors";
+
+main {
+  @include darkMainRules(#100f10);
+}
+
+.Greeting {
+  border-radius: 12px;
+  outline: 10px solid #1f1d1b;
+  padding: 3em 2em;
+  width: 600px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 200px;
+  &-flex {
+    margin-bottom: 30px;
+    font-size: 30px;
+    height: 50px;
+    overflow: hidden;
+    ul {
+      display: inline-block;
+      li {
+        position: relative;
+        top: 0px;
+        font-weight: 700;
+        transition: top 0.2s;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  h1 {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 30px;
+  }
+  button {
+    background-color: $main-yellow;
+    color: #222;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 0;
+    text-transform: uppercase;
+  }
+}
