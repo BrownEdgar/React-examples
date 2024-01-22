@@ -6,7 +6,22 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  &-track {
+    background-color: #fff;
+  }
+  &-thumb {
+    background-color: rgb(98, 98, 98);
+    border-radius: 12px;
+    &:hover {
+      background-color: darkgray;
+    }
+  }
 }

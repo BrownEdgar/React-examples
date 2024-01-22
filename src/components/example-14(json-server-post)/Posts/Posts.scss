@@ -1,0 +1,34 @@
+.Posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+
+  width: 100%;
+  &__item {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: rgba(252, 185, 40, 0.4) 0px 0px 1px 2px, rgba(252, 185, 39, 0.175) 0px 1px 50px;
+      transform: scale(1.01) rotate(1deg);
+    }
+    img {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+    .info {
+      padding: 12px;
+      line-height: 1.6;
+      h2 {
+        margin: 12px 0;
+      }
+      p {
+        font-weight: 500;
+        font-style: 18px;
+        text-align: justify;
+        color: #a3bbbc;
+      }
+    }
+  }
+}

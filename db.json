@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "How to Properly Use the Context API in React With Hooks",
+      "body": "There are a couple more hooks we need to cover as part of this course, and one of them was created based on an entire API. The context API lets us read a context that is shared between components. It is often used when a prop is needed in many places.|The context API lets us avoid passing props around to simplify our codebase. There could also be cases where data is needed globally, such as user data or translations. The context API is well-suited for this task.",
+      "image": "./images/react-1.png"
+    },
+    {
+      "id": "2",
+      "title": "4 React Design Patterns You Should Know",
+      "body": "Child-to-parent communication, also known as bottom-up communication, often becomes a problem when building React applications. Naturally, data flows from top to bottom in React.|While technically there is no way to switch the direction, we can work around this issue with callback functions. Take the following as an example:",
+      "image": "./images/react-4.png"
+    },
+    {
+      "id": "3",
+      "title": "How to Work With Event Listeners in React",
+      "body": "In this lesson, we are going to dive deeper into how event listeners and handlers work in React, and which events are the most commonly used. Each event listener in React starts with the 'on' prefix. For example, onClick, onChange, or onKeyUp",
+      "image": "./images/event-2.png"
+    },
+    {
+      "id": "4",
+      "title": "How to Upload Files in React With Progress Tracking",
+      "body": "Note that you can define additional attributes on the file input for opening multiple files at once or restricting extensions with the multiple and accept attributes respectively.|This will render the open file dialog accordingly. Meaning, if you don't define the multiple attribute, you won't be able to select multiple files. Likewise, if you define a list of extensions using accept, then only those files will be visible in the open file dialog.",
+      "image": "./images/react-3.png"
+    }
+  ]
+}

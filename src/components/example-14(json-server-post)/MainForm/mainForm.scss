@@ -1,0 +1,44 @@
+.MainForm {
+  width: 96%;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    & > .Form-group {
+      width: 100%;
+      & > * {
+        width: 100%;
+        padding: 8px 0;
+        display: block;
+      }
+      label {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+      input,
+      textarea {
+        border: 2px solid #fcba28;
+        background-color: #000;
+        padding: 0.6rem;
+        color: bisque;
+        font-size: 18px;
+        caret-color: #fcba28;
+
+        &:focus {
+          outline: none;
+        }
+        & + .errormessage {
+          color: #ff3434;
+        }
+      }
+      #hidden {
+        opacity: 0;
+        visibility: hidden;
+        user-select: none;
+      }
+    }
+  }
+}
