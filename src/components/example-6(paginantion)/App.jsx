@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Posts from './components/Posts'
 import axios from 'axios'
 
@@ -22,8 +22,8 @@ export default function App() {
     fetchPost()
   }, [])
 
-// currentPage = 3
-// postPerPage = 10
+  // currentPage = 3
+  // postPerPage = 10
   const lastPostIndex = currentPage * postPerPage; // 3x10=30
   const firstPostIndex = lastPostIndex - postPerPage; // 30-10=20 
   const currentPosts = posts.slice(firstPostIndex, lastPostIndex) // slice(20,30)

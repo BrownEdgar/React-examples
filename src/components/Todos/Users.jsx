@@ -110,9 +110,6 @@ export default function Users({ users, handleDelete, handleSorted, filteredGende
 
                 }
               </>
-
-
-
             )
           })
         }
