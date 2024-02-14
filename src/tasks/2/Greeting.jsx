@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { greetingsArray } from '../../constants/constants';
+import { greetingsArray } from '../../utils/constants/constants';
 
 export default function Greeting({ name }) {
   const [index, setIndex] = useState(() => {
     return Number(localStorage.getItem('index'))
   });
-  const [isActive, setIsActive] = useState(false)
 
   const handleClick = () => {
     const nextIndex = index === greetingsArray.length - 1
@@ -15,14 +14,6 @@ export default function Greeting({ name }) {
     setIndex(nextIndex);
     localStorage.setItem('index', nextIndex)
   }
-
-  useEffect(() => {
-    setIsActive(true);
-    setTimeout(() => {
-      setIsActive(false);
-    }, 2000)
-  }, [index])
-
 
   return (
     <div className='Greeting'>
@@ -43,7 +34,6 @@ export default function Greeting({ name }) {
     </div>
   )
 }
-
 
 Greeting.propTypes = {
   name: PropTypes.string.isRequired

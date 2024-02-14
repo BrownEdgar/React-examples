@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <div className='App'>
-      <h1>currentTarget: {currentTarget}</h1>
+
       <MenuBar changeTarget={changeTarget} currentTarget={currentTarget} />
       <List data={currentData} currentTarget={currentTarget} />
     </div>

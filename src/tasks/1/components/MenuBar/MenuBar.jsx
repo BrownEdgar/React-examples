@@ -12,6 +12,7 @@ MenuBar.propTypes = {
 export default function MenuBar({ changeTarget, currentTarget }) {
   return (
     <div className='Menu'>
+      <h1 className='Menu__Title'>{currentTarget}</h1>
       <ul className='Menu__list'>
         {MENU_ITEMS_LIST.map(menuItem => {
           return <li

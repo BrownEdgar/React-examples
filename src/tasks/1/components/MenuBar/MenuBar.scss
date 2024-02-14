@@ -1,9 +1,10 @@
 .Menu {
-  height: 80px;
   border-bottom: 1px solid grey;
   display: flex;
-  justify-content: flex-end;
-  align-self: center;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 50px;
+  padding: 0px 100px;
   &__list {
     display: flex;
     align-self: flex-end;
@@ -11,7 +12,7 @@
     align-items: flex-end;
     gap: 16px;
     height: 40px;
-    padding: 0 10px;
+    padding: 0 30px;
     flex-basis: 40%;
     list-style: none;
   }
@@ -30,9 +31,11 @@
       background-color: green;
       color: #fff;
       transform: translateY(-6px);
-      transition:
-        transform 0.3s,
-        background-color 0.1s;
+      transition: transform 0.3s, background-color 0.1s;
     }
+  }
+  &__Title {
+    color: beige;
+    text-transform: uppercase;
   }
 }
