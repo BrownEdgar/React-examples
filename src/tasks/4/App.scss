@@ -1,0 +1,62 @@
+body {
+  background-color: #dedede;
+}
+
+.App {
+  width: 700px;
+  margin: 50px auto;
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+  &__block {
+    padding: 2em;
+    border-radius: 6px;
+    margin: 40px 0;
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+      padding: 4px;
+      font-weight: 400;
+    }
+  }
+  &__buttons {
+    margin: 20px 0;
+    .btn {
+      margin-right: 20px;
+      border-radius: 20px;
+      padding: 0.6rem 2rem;
+      border: 1px solid #fff;
+      line-height: 1;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-size: 16px;
+      &-black {
+        background-color: #222;
+        color: #fff;
+      }
+      &-blue {
+        color: #fff;
+        background-color: royalblue;
+      }
+      &-yellow {
+        color: #000;
+        background-color: rgb(231, 231, 22);
+        border-color: #000;
+      }
+    }
+  }
+  span {
+    background-color: rgb(4, 166, 112);
+    color: #fff;
+    padding: 0px 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    border-radius: 6px;
+    margin-right: 4px;
+  }
+}
