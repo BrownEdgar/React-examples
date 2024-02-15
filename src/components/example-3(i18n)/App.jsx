@@ -5,7 +5,7 @@ import Todo from "./TodoList/Todo";
 
 
 import { I18nProvider, LOCALES } from "./i18n"
-import translate from './i18n/translate';
+import translate from './i18n/Translate';
 
 function App() {
   const [languages, setlanguages] = useState(LOCALES.ENGLISH);
@@ -39,7 +39,7 @@ function App() {
     <I18nProvider locale={languages}>
       <div className="container">
         <h2>{translate("hello")}</h2>
-        <h2>{translate("withpath", { path: value, path2: "Hayeren"})}</h2>
+        <h2>{translate("withpath", { path: value, path2: "Hayeren" })}</h2>
         <h1>{translate("abcd")}</h1>
         <select name="lng" id="lng" onChange={handlerChange}>
           <option value="ENGLISH">eng</option>

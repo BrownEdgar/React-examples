@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './components/example-6(paginantion)4(json-server-post)'
+import App from './components/example-3(i18n)/App'
 
 import './index.scss'
 
