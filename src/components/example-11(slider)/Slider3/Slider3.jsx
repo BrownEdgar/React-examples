@@ -20,7 +20,7 @@ export default function Slider3() {
         {new Array(4).fill().map((_, index) => {
           return (
 
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Card  cap" />
+            <img className="card-img-top" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Card  cap" key={index} />
 
           )
         })}

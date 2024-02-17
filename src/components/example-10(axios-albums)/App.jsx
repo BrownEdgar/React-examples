@@ -1,10 +1,10 @@
 import instance from './axios.js';
 import axios from 'axios'
 import React, { useState, useEffect } from 'react';
-import useWindowScrollPosition from './hooks/useWindowScrollPosition';
+import useWindowScrollPosition from './hooks/useWindowScrollPosition.js';
 
 import "./App.scss"
-import Child from './Child.js';
+import Child from './Child';
 
 export default function App() {
 

@@ -1,13 +1,13 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faCheckSquare, faDollar } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faCheckSquare, faDollar, faBurst } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 export default function App() {
   return (
     <div>
-      <FontAwesomeIcon icon={faCoffee} size="6x" rotation={90} />
+      <FontAwesomeIcon icon={faBurst} size="3x" rotation={20} />
       <hr />
       <FontAwesomeIcon icon={faCheckSquare} size="6x" flip="vertical" />
       <hr />
