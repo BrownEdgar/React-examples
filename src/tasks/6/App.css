@@ -1,0 +1,75 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 50px auto;
+  gap: 15px;
+  border: 3px solid rgb(147, 196, 213);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 16px;
+  min-width: 900px;
+}
+
+.App__content {
+  width: 400px;
+  height: 340px;
+  background-color: rgba(232, 222, 222, 0.8);
+  border-radius: 0 0 12px 12px;
+  overflow: auto;
+  padding: 20px;
+  color: #121512;
+  border-top: 8px solid rgb(14, 123, 162);
+
+}
+
+.App__content span {
+  background-color: rgb(14, 123, 162);
+  padding: 22px;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.App__content h2 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.App__content p {
+  font-size: 15px;
+}
+
+.App button {
+  font-size: 30px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 10px 10px 10px;
+  transition: .4s;
+  line-height: 1;
+}
+
+.App button:active {
+  scale: 0.94;
+}
+
+.App button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.App button:not(:disabled):hover,
+.App button:not(:active):hover {
+  background-color: #0056b3;
+  box-shadow: 10px 10px 20px #032244bd;
+  transform: translateX(5px);
+}

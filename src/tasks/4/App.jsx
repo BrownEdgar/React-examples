@@ -1,19 +1,23 @@
 import React, { useState } from 'react'
 import './App.scss'
+import classNames from 'classnames';
 
 const arr = ['black', 'blue', 'yellow']
 
 export default function App() {
-  const [currentBg, setCurrentBg] = useState(arr[0])
+  const [currentBg, setCurrentBg] = useState(arr[0]);
+
   const handleClick = (color) => setCurrentBg(color)
 
   return (
     <div className='App'>
       <h1>background is: <span>{currentBg}</span></h1>
-      <div className="App__block" style={{
-        backgroundColor: `${currentBg}`,
-        color: `${currentBg === 'yellow' ? 'black' : 'white'}`
-      }}>
+      <div className={
+        classNames("App__block", {
+          [`App__block-${currentBg}`]: currentBg === 'yellow'
+        })} style={{
+          backgroundColor: `${currentBg}`,
+        }}>
         <h2>
           <span>React events</span>
           (change backgrounds)

@@ -2,8 +2,6 @@ import { useEffect, useRef, } from 'react';
 import './Title.scss'
 
 import PropTypes from 'prop-types';
-
-
 export default function Title({ as, hedding }) {
   console.log('ok');
   const Element = as;
