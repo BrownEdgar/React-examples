@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './tasks/6/App'
+import App from './tasks/7/App'
 
 import './index.scss'
 
