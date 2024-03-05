@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  &__list {
+    margin: 20px auto;
+    list-style: none;
+    width: 700px;
+    li {
+      width: 100%;
+      margin-bottom: 10px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      label {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #c20000;
+        span {
+          font-size: 22px;
+          color: #333;
+        }
+        & + input[type="radio"] {
+          display: none;
+          &:checked + .content {
+            max-height: 400px;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 0 10px;
+      line-height: 26px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+  }
+}

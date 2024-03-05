@@ -4,4 +4,11 @@
   flex-direction: column;
   align-items: center;
   background: #000;
+  hr {
+    width: 80%;
+    height: 2px;
+    margin: 50px auto;
+    background-color: #2bc9bf69;
+    border: 0;
+  }
 }
