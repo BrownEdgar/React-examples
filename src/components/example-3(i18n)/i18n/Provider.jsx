@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import { IntlProvider } from 'react-intl';
-import { LOCALES } from './locales';
-import messages from './messages';
+import { IntlProvider } from "react-intl";
+import { LOCALES } from "./locale";
+import { Fragment } from "react";
+import messages from "./messages";
 
 export default function Provider({ children, locale = LOCALES.ENGLISH }) {
   return (
@@ -11,7 +11,6 @@ export default function Provider({ children, locale = LOCALES.ENGLISH }) {
       messages={messages[locale]}
     >
       {children}
-
     </IntlProvider>
-  )
+  );
 }

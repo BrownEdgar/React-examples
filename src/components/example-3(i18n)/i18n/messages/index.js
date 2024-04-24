@@ -1,11 +1,11 @@
-import en from "./en"
-import de from "./de"
-import hy from "./hy"
+import am from "./am";
+import deu from "./deu";
+import en from "./en";
+import ru from "./ru";
 
-
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-	...en,
-	...de,
-	...hy,
-}
+  ...am,
+  ...deu,
+  ...en,
+  ...ru,
+};
